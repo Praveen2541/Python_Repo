@@ -1,0 +1,12 @@
+def remove_duplicates(items):
+    seen = set()
+    unique_list = []
+    
+    for item in items:
+        if item not in seen:
+            unique_list.append(item)
+            seen.add(item)
+            
+    return unique_list
+Data : [1,2,2,3,3,4]
+print(remove_duplicates(data))
